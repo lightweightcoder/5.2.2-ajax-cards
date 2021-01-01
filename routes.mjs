@@ -1,10 +1,9 @@
 import db from './models/index.mjs';
 
 // import your controllers here
-import games from './controllers/games.mjs'
+import games from './controllers/games.mjs';
 
-export default function routes( app ){
-
+export default function routes(app) {
   const GamesController = games(db);
 
   // main page
